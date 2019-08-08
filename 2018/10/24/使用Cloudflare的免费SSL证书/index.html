@@ -55,19 +55,26 @@
   };
 </script>
 
-  <meta name="description" content="有时候我们会遇到对单个表或者多个表进行随机查询，但是如果使用SELECT * FROM table ORDER BY RAND() LIMIT 1这样的方法，效率和性能都非常的差。也许我们可以换个方式方法来实现。">
-<meta name="keywords" content="Rails,MySQL">
+  <meta name="description" content="随着像Google、百度等都表示将更亲和https站点，降权http站点，以及Chrome宣布对非https的站点，将标记为“不安全”的措施以来，全站启用https越来越将是未来的一个必然趋势，也是网站运营者对访问用户的一种安全责任。  目前诸多CDN服务商都开始提供免费的SSL证书服务，对于像我们这类小博客来说，使用免费的证书足以达到https的基本需求了。今天就来介绍一下申请Cloudflar">
+<meta name="keywords" content="https,Nginx,Cloudflare,SSL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在pri_key连贯与pri_key非连贯的表数据中实现随机查询">
-<meta property="og:url" content="https://iocafe87.github.io/2018/10/20/在pri-key连贯与pri-key非连贯的表数据中实现随机查询/index.html">
+<meta property="og:title" content="使用Cloudflare的免费SSL证书">
+<meta property="og:url" content="https://iocafe87.github.io/2018/10/24/使用Cloudflare的免费SSL证书/index.html">
 <meta property="og:site_name" content="iocafe87">
-<meta property="og:description" content="有时候我们会遇到对单个表或者多个表进行随机查询，但是如果使用SELECT * FROM table ORDER BY RAND() LIMIT 1这样的方法，效率和性能都非常的差。也许我们可以换个方式方法来实现。">
+<meta property="og:description" content="随着像Google、百度等都表示将更亲和https站点，降权http站点，以及Chrome宣布对非https的站点，将标记为“不安全”的措施以来，全站启用https越来越将是未来的一个必然趋势，也是网站运营者对访问用户的一种安全责任。  目前诸多CDN服务商都开始提供免费的SSL证书服务，对于像我们这类小博客来说，使用免费的证书足以达到https的基本需求了。今天就来介绍一下申请Cloudflar">
 <meta property="og:locale" content="cn">
-<meta property="og:updated_time" content="2019-08-08T14:36:47.694Z">
+<meta property="og:image" content="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/y57td.png">
+<meta property="og:image" content="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/kg741.png">
+<meta property="og:image" content="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/2ug4c.png">
+<meta property="og:image" content="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/lgfn6.jpg">
+<meta property="og:image" content="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/1b1o3.png">
+<meta property="og:image" content="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/o4ian.png">
+<meta property="og:updated_time" content="2019-08-08T14:44:15.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在pri_key连贯与pri_key非连贯的表数据中实现随机查询">
-<meta name="twitter:description" content="有时候我们会遇到对单个表或者多个表进行随机查询，但是如果使用SELECT * FROM table ORDER BY RAND() LIMIT 1这样的方法，效率和性能都非常的差。也许我们可以换个方式方法来实现。">
-  <link rel="canonical" href="https://iocafe87.github.io/2018/10/20/在pri-key连贯与pri-key非连贯的表数据中实现随机查询/">
+<meta name="twitter:title" content="使用Cloudflare的免费SSL证书">
+<meta name="twitter:description" content="随着像Google、百度等都表示将更亲和https站点，降权http站点，以及Chrome宣布对非https的站点，将标记为“不安全”的措施以来，全站启用https越来越将是未来的一个必然趋势，也是网站运营者对访问用户的一种安全责任。  目前诸多CDN服务商都开始提供免费的SSL证书服务，对于像我们这类小博客来说，使用免费的证书足以达到https的基本需求了。今天就来介绍一下申请Cloudflar">
+<meta name="twitter:image" content="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/y57td.png">
+  <link rel="canonical" href="https://iocafe87.github.io/2018/10/24/使用Cloudflare的免费SSL证书/">
 
 
 <script id="page-configurations">
@@ -81,7 +88,7 @@
   };
 </script>
 
-  <title>在pri_key连贯与pri_key非连贯的表数据中实现随机查询 | iocafe87</title>
+  <title>使用Cloudflare的免费SSL证书 | iocafe87</title>
   
 
 
@@ -196,7 +203,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://iocafe87.github.io/2018/10/20/在pri-key连贯与pri-key非连贯的表数据中实现随机查询/">
+    <link itemprop="mainEntityOfPage" href="https://iocafe87.github.io/2018/10/24/使用Cloudflare的免费SSL证书/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="iocafe87">
@@ -210,7 +217,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">在pri_key连贯与pri_key非连贯的表数据中实现随机查询
+          <h1 class="post-title" itemprop="name headline">使用Cloudflare的免费SSL证书
 
             
           </h1>
@@ -227,7 +234,7 @@
                 
               
 
-              <time title="Created: 2018-10-20 00:56:15" itemprop="dateCreated datePublished" datetime="2018-10-20T00:56:15+08:00">2018-10-20</time>
+              <time title="Created: 2018-10-24 16:38:42" itemprop="dateCreated datePublished" datetime="2018-10-24T16:38:42+08:00">2018-10-24</time>
             </span>
           
 
@@ -242,19 +249,38 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>有时候我们会遇到对单个表或者多个表进行随机查询，但是如果使用<code>SELECT * FROM table ORDER BY RAND() LIMIT 1</code>这样的方法，效率和性能都非常的差。也许我们可以换个方式方法来实现。</p>
+        <p>随着像Google、百度等都表示将更亲和https站点，降权http站点，以及Chrome宣布对非https的站点，将标记为“不安全”的措施以来，全站启用https越来越将是未来的一个必然趋势，也是网站运营者对访问用户的一种安全责任。</p>
+<p><img src="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/y57td.png" alt></p>
+<p>目前诸多CDN服务商都开始提供免费的SSL证书服务，对于像我们这类小博客来说，使用免费的证书足以达到https的基本需求了。今天就来介绍一下申请Cloudflare的免费SSL证书，并配置到nginx上去。（前提要求，域名必须添加到Cloudflare当中，并将域名的NS配置为Cloudflare的NS服务器）</p>
 <a id="more"></a>
-<h2 id="primary-key-是连贯的数据表"><a href="#primary-key-是连贯的数据表" class="headerlink" title="primary_key 是连贯的数据表"></a>primary_key 是连贯的数据表</h2><p><code>primary_key连贯</code>，意思是数据表的主键是连贯的，例如1,2,3,4,5,6。这样的查询就非常的简单，我们只需要得到这张表的总count，通过程序来随机一个primary_key，再通过这个primary_key直接查询就好了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 随机users表</span><br><span class="line">primary_key = rand(1..User.count)</span><br><span class="line">if User.exists?(primary_key)</span><br><span class="line">  user = User.find(primary_key)</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 
-<!--more-->
+<h3 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h3><p><img src="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/kg741.png" alt></p>
+<p>打开<strong>对应域名</strong>的”Crypto”配置界面，找到右侧的选项卡进行选择。分别有<code>Off</code> <code>Flexible</code> <code>Full</code> <code>Full (strict)</code>，在页面上的<code>Help</code>上可以找到一些介绍。</p>
+<blockquote>
+<p><strong>Off</strong>: 顾名思义就是不启用https访问，所有的https都将被重定向到http上</p>
+</blockquote>
+<blockquote>
+<p><strong>Flexible</strong>: 访问者到Cloudflare的连接是通过https协议，而Cloudflare到源站的连接是通过http协议，适用于那些无法把SSL证书配置到源站上的用户选择。</p>
+</blockquote>
+<blockquote>
+<p><strong>Full</strong>: 访问者到Cloudflare，再到源站的连接，都是通过https协议完成。但是并不会去验证Cloudflare到源站之间https协议证书是否为“自签”。</p>
+</blockquote>
+<blockquote>
+<p><strong>Full(strict)</strong>: 与Full的都为全程https协议连接。但会验证Cloudflare到源站之间的https协议证书的合法性：“没有过期的可信机构签发的CA证书”</p>
+</blockquote>
+<p>如果此处选择使用<code>Flexible</code>的话，我们就基本的完成了https的配置，因为在源站上可以不改变任何的配置，例如保持nginx上使用80端口的配置不变。如果此处我们选择了<code>Full</code>或<code>Full(strict)</code>，则可以使用Cloudflare创建一个免费的证书。</p>
+<p><img src="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/2ug4c.png" alt></p>
+<p><img src="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/lgfn6.jpg" alt></p>
+<p>我们可以把<code>Always USE HTTPS</code>打开，这样所有的http请求会通过cloudflare这边，重定向到https上</p>
+<p><img src="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/1b1o3.png" alt></p>
+<h3 id="配置nginx"><a href="#配置nginx" class="headerlink" title="配置nginx"></a>配置nginx</h3><p>之后根据你自己的需求选择不同的签发形式，我这里选择默认的形式，拿到证书和私钥。通过FTP上传到VPS上，再配置nginx，即可实现全程都加密的https访问了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssl on;</span><br><span class="line">ssl_certificate /usr/local/nginx/conf/ssl/gofmt.crt;</span><br><span class="line">ssl_certificate_key /usr/local/nginx/conf/ssl/gofmt.key;</span><br></pre></td></tr></table></figure>
 
-<h2 id="primary-key-非连贯的数据表"><a href="#primary-key-非连贯的数据表" class="headerlink" title="primary_key 非连贯的数据表"></a>primary_key 非连贯的数据表</h2><p><code>primary_key非连贯</code>，意思是数据表的主键并不是连贯的，当然这样的情况在生产环境中更为多见，例如1,2,6,16,24,35。这样的查询就无法直接随机主键ID来实现了。我们可以建立一张随机关联表<code>relations</code>，通过<code>relations</code>表的外键来关联主键ID，因为我们<code>relations</code>的主键ID是连贯的，所以只需要随机<code>relations</code>表的主键ID，就能得到我们希望随机的数据。而且这样的方案可以实现多个不同表的随机。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">+-----------------+----------+------+-----+---------+----------------+</span><br><span class="line">| Field           | Type     | Null | Key | Default | Extra          |</span><br><span class="line">+-----------------+----------+------+-----+---------+----------------+</span><br><span class="line">| id              | int(11)  | NO   | PRI | NULL    | auto_increment |</span><br><span class="line">| origin_id       | int(11)  | YES  |     | 0       |                |</span><br><span class="line">| origin_table_id | int(11)  | YES  |     | 0       |                |</span><br><span class="line">+-----------------+----------+------+-----+---------+----------------+</span><br></pre></td></tr></table></figure>
-
-<p>其中<code>origin_id</code>是<code>users</code>和<code>articles</code>的外键，可以重复，<code>origin_table_id</code>用来区分<code>origin_id</code>是哪张表的外键，比如我们设定<code>1 =&gt; users</code>，<code>2 =&gt; articles</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 随机users表、articles表</span><br><span class="line">relation_id = rand(1..Relation.count)</span><br><span class="line">relation = Relation.find(relation_id)</span><br><span class="line"></span><br><span class="line">case relation.origin_table_id</span><br><span class="line">when 1</span><br><span class="line">  if User.exists?(relation.origin_id)</span><br><span class="line">    user = User.find(relation.origin_id)</span><br><span class="line">  end</span><br><span class="line">when 2</span><br><span class="line">  if Article.exists?(relation.origin_id)</span><br><span class="line">    article = Article.find(relation.origin_id)</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-
+<p><img src="https://gofmt.oss-cn-hangzhou.aliyuncs.com/images/o4ian.png" alt></p>
+<p>这样，我们的工作便完成了！</p>
+<h3 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h3><p>配置nginx可能会遇到<code>PEM_read_bio_X509_AUX</code>这样的错误提示，可能是在copy证书时，字符少拷贝了，或者多打了一些字符，重新copy一下即可解决</p>
+<h3 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h3><p>Cloudflare的CDN海外节点在国内访问，会有不稳定的情况发生，静态资源加载起来很卡，所以服务于国内用户的站，还是建议备案并使用国内CDN，对于我这个博客而言，小众站点无所谓了。</p>
+<p>相传GFW对证书是Cloudflare签发的站，还会“特别照顾”，不知道是不是真的。</p>
 
     </div>
 
@@ -270,9 +296,13 @@
           
           <div class="post-tags">
             
-              <a href="/tags/Rails/" rel="tag"># Rails</a>
+              <a href="/tags/https/" rel="tag"># https</a>
             
-              <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+              <a href="/tags/Nginx/" rel="tag"># Nginx</a>
+            
+              <a href="/tags/Cloudflare/" rel="tag"># Cloudflare</a>
+            
+              <a href="/tags/SSL/" rel="tag"># SSL</a>
             
           </div>
         
@@ -282,8 +312,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2018/10/20/使用SSH证书登陆Linux/" rel="next" title="使用SSH证书登陆Linux">
-                  <i class="fa fa-chevron-left"></i> 使用SSH证书登陆Linux
+                <a href="/2018/10/22/通过配置iTerm的Profiles来方便管理VPS的SSH登录/" rel="next" title="通过配置iTerm的Profiles来方便管理VPS的SSH登录">
+                  <i class="fa fa-chevron-left"></i> 通过配置iTerm的Profiles来方便管理VPS的SSH登录
                 </a>
               
             </div>
@@ -292,8 +322,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2018/10/20/Sunspot使用笔记/" rel="prev" title="Sunspot使用笔记">
-                  Sunspot使用笔记 <i class="fa fa-chevron-right"></i>
+                <a href="/2018/11/03/在Mac下设置ll、la等命令别名/" rel="prev" title="在Mac下设置ll、la等命令别名">
+                  在Mac下设置ll、la等命令别名 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -422,7 +452,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#primary-key-是连贯的数据表"><span class="nav-number">1.</span> <span class="nav-text">primary_key 是连贯的数据表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#primary-key-非连贯的数据表"><span class="nav-number">2.</span> <span class="nav-text">primary_key 非连贯的数据表</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#操作方法"><span class="nav-number">1.</span> <span class="nav-text">操作方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置nginx"><span class="nav-number">2.</span> <span class="nav-text">配置nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些问题"><span class="nav-number">3.</span> <span class="nav-text">一些问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题外话"><span class="nav-number">4.</span> <span class="nav-text">题外话</span></a></li></ol></div>
             
 
           </div>

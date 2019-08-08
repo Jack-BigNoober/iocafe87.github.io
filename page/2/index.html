@@ -57,26 +57,26 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="iocafe87">
-<meta property="og:url" content="https://iocafe87.github.io/tags/Minecraft/index.html">
+<meta property="og:url" content="https://iocafe87.github.io/page/2/index.html">
 <meta property="og:site_name" content="iocafe87">
 <meta property="og:locale" content="cn">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iocafe87">
-  <link rel="canonical" href="https://iocafe87.github.io/tags/Minecraft/">
+  <link rel="canonical" href="https://iocafe87.github.io/page/2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
+    isHome: true,
     isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Tag: Minecraft | iocafe87</title>
+  <title>iocafe87</title>
   
 
 
@@ -180,81 +180,100 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-          <div id="content" class="content ">
+          <div id="content" class="content page-home">
             
-
-  
-  
-  
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Minecraft<small>Tag</small>
-        </h1>
-      </div>
-
+  <section id="posts" class="posts-expand">
       
-
-  
-  
-  
-
-  
-    
-    <div class="collection-title">
-      <h1 class="archive-year" id="archive-year-2018">2018</h1>
-    </div>
-  
-  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://iocafe87.github.io/2018/10/20/在Linux上快速搭建、配置Minecraft服务器/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="iocafe87">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iocafe87">
+    </span>
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2018/10/20/在Linux上快速搭建、配置Minecraft服务器/" itemprop="url">
+          <h1 class="post-title" itemprop="name headline">
+              
+              <a href="/2018/10/20/在Linux上快速搭建、配置Minecraft服务器/" class="post-title-link" itemprop="url">在Linux上快速搭建、配置Minecraft服务器</a>
             
-              <span itemprop="name">在Linux上快速搭建、配置Minecraft服务器</span>
-            
-          </a>
+          </h1>
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-20T00:47:05+08:00"
-              content="2018-10-20">
-          10-20
-        </time>
-      </div>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
 
-    </header>
-  </article>
+              
+                
+              
 
+              <time title="Created: 2018-10-20 00:47:05" itemprop="dateCreated datePublished" datetime="2018-10-20T00:47:05+08:00">2018-10-20</time>
+            </span>
+          
 
+          
 
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>自己一直都不是重度MC玩家，只是偶尔和基友一起撸一下，很多第三方服务器的玩法，完全搞不明白，其实自己搭建一个官方的标准服务器就好了。也没什么服务器权限管理，就依赖<code>whitelist 白名单</code>来控制是否为合法玩家。</p>
+<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><p>我自己选择的阿里云，多线机房确实太重要，比如我是电信，基友是联通。以下我以<code>debian</code>为例子，选择<code>debian</code>理由很简单，部署环境的速度<strong>够快够简单</strong>。</p>
+<p>内存尽量选择<code>1G</code>以上，<code>1-4G</code>就尽量选择<code>32位</code>系统吧，节约一些内存，当然在线玩家人数在5人以内的话，1G足以。512MB内存光运行<code>minecraft_server.jar</code>就捉襟见肘，而且512MB内存运行mc服务器，在创建<code>世界</code>的时候容易crash</p>
+<p>纯粹简单的快速搭建，不需要考虑极致的稳定性，比如源码本地编译之类。所以本着快速部署的包安装为原则，建议可以使用<code>debian</code>或者<code>ubuntu</code>。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/10/20/在Linux上快速搭建、配置Minecraft服务器/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
     </div>
 
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
   </div>
   
   
   
+  </article>
+
+    
+  </section>
 
   
-
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 
 
           </div>
